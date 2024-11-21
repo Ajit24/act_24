@@ -1,0 +1,26 @@
+<div class="container mt-2">
+<div class="row  app-container p-2">
+    <div class="col-lg-10 offset-md-1">
+        
+            <nav class="nav-cont" style="position: fixed; top: 0; left: 0; right: 0; background: rgb(153, 87, 87); z-index: 500;">
+              <ul style="list-style-type: none; padding: 10px; display: flex; justify-content: space-around;">
+                <li *ngFor="let section of sections" [class.active]="activeSection === section">
+                  <a href="#" (click)="scrollTo(section)" 
+                     [ngStyle]="{ 'font-weight': activeSection === section ? 'bold' : 'normal', 'color': activeSection === section ? 'blue' : 'black' }">
+                    {{ section.charAt(0).toUpperCase() + section.slice(1) }}
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div style="height: 140vh">
+              <div *ngFor="let section of sections" [id]="section" 
+                   style="height:80vh; padding: 20px; background-color: #f0f0f0; border: 1px solid #ccc; margin-bottom: 10px;">
+                <h2>{{ section.charAt(0).toUpperCase() + section.slice(1) }}</h2>
+                <p>This is the content for {{ section }}</p>
+              </div>
+            </div>
+        
+    </div>
+</div>
+</div>
+

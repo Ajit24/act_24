@@ -1,0 +1,23 @@
+
+.navbar{
+    border: 1px solid red;
+
+}
+.container-fluid{
+    background-color: #FFD54F;
+}
+.nav-cont{
+    border: 2px solid blue;
+    margin-top: 20px;
+    height: 560px;
+
+}
+.add-btn{
+height: 40px;
+width: 75px;
+background-color:#E91E63;
+color: #FFD54F;
+border-radius: 8px;
+margin-top: 10px;
+
+}

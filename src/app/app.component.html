@@ -1,0 +1,111 @@
+<nav class="navbar navbar-expand-sm main_nav">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Logo</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mynavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link active" routerLink="content">Content</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="add-emp">Add-employee</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="ifelse">ifelse</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="forms">Forms</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="search">Search</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="product">Product</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="cluster">Cluster</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="exactfaq">Exact_FAQ</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="roaster">Roaster</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="graph">Graph</a>
+        </li>
+        <li class="nav-item" style="margin-top: -12px">
+          <a class="nav-link" routerLink="download">download</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search" />
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb mt-3 ">
+  <div class="breadcrumb-item">
+    <a routerLink="/">Home</a>
+  </div>
+  <div class="divider">></div>
+  <div class="breadcrumb-item active link-success">{{ currentPage }}</div>
+</div>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- <div class="container-fluid footer_cont">
+  <div class="footer-clean">
+      <footer>
+          <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-sm-4 col-md-3 item">
+                      <h3>Services</h3>
+                      <ul>
+                          <li><a href="#">Web design</a></li>
+                          <li><a href="#">Development</a></li>
+                          <li><a href="#">Hosting</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-4 col-md-3 item">
+                      <h3>About</h3>
+                      <ul>
+                          <li><a href="#">Company</a></li>
+                          <li><a href="#">Team</a></li>
+                          <li><a href="#">Legacy</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-sm-4 col-md-3 item">
+                      <h3>Careers</h3>
+                      <ul>
+                          <li><a href="#">Job openings</a></li>
+                          <li><a href="#">Employee success</a></li>
+                          <li><a href="#">Benefits</a></li>
+                      </ul>
+                  </div>
+                  <span></span>
+                  <div class="col-lg-3 item social social_ico">
+                      <a href="#"><i class="icon ion-logo-facebook"></i></a>
+                      <a href="#"><i class="icon ion-logo-twitter"></i></a>
+                      <a href="#"><i class="icon ion-logo-instagram"></i></a>
+                      <p class="copyright">
+                          Copyright ©2024 All rights reserved | This template is made with ❤ by Ajit Kr.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+</div> -->

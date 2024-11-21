@@ -1,0 +1,38 @@
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 310px;
+  }
+  
+  .alert-danger {
+    background-color: #35e349;
+    border-color: #ebccd1;
+    color: #060303;
+  }
+  .search-div {
+    height: 450px;
+    border: 2px solid royalblue;
+    margin-bottom: 20px;
+
+  }
+  .search-input{
+    width: 230px;
+  }
+  
+  .user-item {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .user-item:hover {
+    background-color: #f0f0f0;
+  }
+
+
+
+
+
+

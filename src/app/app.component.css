@@ -1,0 +1,69 @@
+
+.main_nav{
+    margin-top: 0px;
+    border: 1.5px solid rgb(200, 195, 195);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.nav-link{
+    font-weight: 700;
+}
+.footer_cont{
+border: 2px solid rgb(19, 8, 8);
+margin-top: 30%;
+border-radius: 6px;
+}
+.footer-clean {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+.footer-clean h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.footer-clean ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-clean ul li {
+    margin: 10px 0;
+}
+.footer-clean ul li a {
+    color: #333;
+    text-decoration: none;
+}
+.footer-clean .social {
+    text-align: center;
+    margin-top: 20px;
+}
+.footer-clean .social a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+}
+.footer-clean .social a:hover {
+    color: #007bff;
+}
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 16px; /* Adjust font size as needed */
+    margin: 10px 0; /* Space above and below the breadcrumb */
+   
+  }
+  
+  .breadcrumb-item {
+    margin: 0 5px; /* Space between items */
+  }
+  
+  .divider {
+    margin: 0 5px; /* Space around the divider */
+    color: #6c757d; /* Bootstrap's secondary text color */
+  }

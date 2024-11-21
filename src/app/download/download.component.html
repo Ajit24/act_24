@@ -1,0 +1,11 @@
+<div class="download-container">
+    <h3>Primary +  Secondary  Mapping Upload</h3> <hr> <br>
+        
+    <button class="temp-btn" (click)="onDownloadTemplate()">Download template</button>
+
+    <div class="upload-section">
+      <input type="file" (change)="onFileSelected($event)" />
+      <button (click)="onUploadSheet()">Upload Sheet</button>
+      <button (click)="onCancel()">Cancel</button>
+    </div>
+  </div>
