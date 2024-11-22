@@ -1,0 +1,17 @@
+<!-- <div>
+    <button (click)="reset()">Reset</button>
+  </div> -->
+
+  <div class="reset-button-wrapper">
+    <h2>Keep scrolling - more items will reveal</h2>
+  
+    <button (click)="reset()" mat-flat-button color="primary">
+      Reset value
+    </button>
+  </div> <br>
+  <div class="scroll-container" (scroll)="onScroll($event)">
+    <div *ngFor="let item of items" class="item">
+      Item {{ item }}
+    </div>
+    <div *ngIf="loading" class="loading">Loading...</div>
+  </div>

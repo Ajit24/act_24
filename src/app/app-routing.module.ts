@@ -11,6 +11,7 @@ import { ExactfaqComponent } from './exactfaq/exactfaq.component';
 import { RoasterComponent } from './roaster/roaster.component';
 import { GraphComponent } from './graph/graph.component';
 import { DownloadComponent } from './download/download.component';
+import { ScrollComponent } from './scroll/scroll.component';
 
 
 
@@ -26,7 +27,8 @@ const routes: Routes = [
 {path:'exactfaq', component:ExactfaqComponent},
 {path:'roaster', component:RoasterComponent},
 {path:'graph', component: GraphComponent},
-{path:'download', component: DownloadComponent}
+{path:'download', component: DownloadComponent},
+{path:'scroll', component:ScrollComponent}
 ];
 
 @NgModule({

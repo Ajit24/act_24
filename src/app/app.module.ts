@@ -25,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GraphComponent } from './graph/graph.component';
 import { NgChartsModule } from 'ng2-charts';
 import { DownloadComponent } from './download/download.component';
+import { ScrollComponent } from './scroll/scroll.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { DownloadComponent } from './download/download.component';
     RoasterComponent,
     GraphComponent,
     DownloadComponent,
+    ScrollComponent,
 
     
   ],
