@@ -30,11 +30,12 @@ export class SearchComponent {
     if (this.searchTerm) {
       this.filteredUsers = this.users.filter(user =>
         user.name.firstname.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-        user.name.lastname.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-        user.email.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-        user.username.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
-        user.phone.includes(this.searchTerm) ||
-        user.address.city.toLowerCase().includes(this.searchTerm.toLowerCase())
+        user.name.lastname.toLowerCase().includes(this.searchTerm.toLowerCase()) 
+        //||
+        // user.email.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+        // user.username.toLowerCase().includes(this.searchTerm.toLowerCase()) ||
+        // user.phone.includes(this.searchTerm) ||
+        // user.address.city.toLowerCase().includes(this.searchTerm.toLowerCase())
       );
     } else {
       this.filteredUsers = this.users;
