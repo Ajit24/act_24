@@ -8,21 +8,20 @@ import { Component } from '@angular/core';
 export class ScrollComponent {
   items: number[] = [];
   loading: boolean = false;
-  limit: number = 20;
+  limit: number = 10;
 
   constructor() {
     this.loadMoreItems();
   }
 
   loadMoreItems() {
-    if (this.loading) return;
-
+ if (this.loading) return;
     this.loading = true;
     setTimeout(() => {
       const start = this.items.length;
       const end = start + this.limit;
       this.items = this.items.concat(Array.from({ length: this.limit }, (_, i) => start + i + 1));
-      this.loading = false;
+     this.loading = false;
     }, 1000); // Simulate a network delay
   }
 

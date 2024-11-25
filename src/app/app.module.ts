@@ -42,7 +42,7 @@ import { ScrollComponent } from './scroll/scroll.component';
     GraphComponent,
     DownloadComponent,
     ScrollComponent,
-
+    
     
   ],
   imports: [

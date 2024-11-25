@@ -1,6 +1,6 @@
 
 .scroll-container {
-    height: 600px; /* Set a fixed height for the scroll container */
+    height: 420px; /* Set a fixed height for the scroll container */
     overflow-y: auto; /* Enable vertical scrolling */
     border: 1px solid #ccc;
   }
