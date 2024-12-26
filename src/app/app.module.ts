@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -26,6 +27,8 @@ import { GraphComponent } from './graph/graph.component';
 import { NgChartsModule } from 'ng2-charts';
 import { DownloadComponent } from './download/download.component';
 import { ScrollComponent } from './scroll/scroll.component';
+import { CounterComponent } from './counter/counter.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +45,8 @@ import { ScrollComponent } from './scroll/scroll.component';
     GraphComponent,
     DownloadComponent,
     ScrollComponent,
+    CounterComponent,
+    PostComponent,
     
     
   ],
@@ -53,7 +58,7 @@ import { ScrollComponent } from './scroll/scroll.component';
     HttpClientModule,
     FormsModule,
     TableModule,PaginatorModule,  DialogModule,
-    DropdownModule,BrowserAnimationsModule,NgChartsModule
+    DropdownModule,BrowserAnimationsModule,NgChartsModule,CommonModule
     
   ],
   providers: [

@@ -1,0 +1,24 @@
+<div class="counter">
+    <h2>Counter: {{ count }}</h2>
+    <div class="buttons">
+      <button (click)="increment()">+</button>
+      <button (click)="decrement()">-</button>
+      <button (click)="reset()">Reset</button>
+    </div>
+  </div> <hr>
+
+  <div class="pagination-section">
+    <h3>Paginated Items</h3>
+    <ul class="items-list">
+      <li *ngFor="let item of paginatedItems">{{ item }}</li>
+    </ul>
+    
+    <div class="pagination-controls">
+      <button [disabled]="currentPage === 1" (click)="previousPage()">Previous</button>
+      <span class="page-info">Page {{ currentPage }} of {{ totalPages }}</span>
+      <button [disabled]="currentPage === totalPages" (click)="nextPage()">Next</button>
+    </div>
+  </div>
+ <hr>
+
+ 

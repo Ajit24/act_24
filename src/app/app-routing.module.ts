@@ -12,6 +12,8 @@ import { RoasterComponent } from './roaster/roaster.component';
 import { GraphComponent } from './graph/graph.component';
 import { DownloadComponent } from './download/download.component';
 import { ScrollComponent } from './scroll/scroll.component';
+import { CounterComponent } from './counter/counter.component';
+import { PostComponent } from './post/post.component';
 
 
 
@@ -28,7 +30,10 @@ const routes: Routes = [
 {path:'roaster', component:RoasterComponent},
 {path:'graph', component: GraphComponent},
 {path:'download', component: DownloadComponent},
-{path:'scroll', component:ScrollComponent}
+{path:'scroll', component:ScrollComponent},
+{path:'counter', component:CounterComponent},
+{path:'post', component:PostComponent}
+
 ];
 
 @NgModule({
