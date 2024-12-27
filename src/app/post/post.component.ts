@@ -1,16 +1,4 @@
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-post',
-//   templateUrl: './post.component.html',
-//   styleUrls: ['./post.component.css']
-// })
-// export class PostComponent {
-
-// }
-
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { PostService } from '../post/post.service';
 import { Post } from '../post/models/post.model';
 
@@ -20,11 +8,36 @@ import { Post } from '../post/models/post.model';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
-  posts$ = this.apiService.getPosts();
+  posts: Post[] = [];
+  paginatedPosts: Post[] = [];
+  currentPage: number = 1;
+  postsPerPage: number = 5; 
 
   constructor(private apiService: PostService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.apiService.getPosts().subscribe((data: Post[]) => {
+      this.posts = data;
+      this.updatePaginatedPosts();
+    });
+  }
 
+  updatePaginatedPosts() {
+    const startIndex = (this.currentPage - 1) * this.postsPerPage;
+    this.paginatedPosts = this.posts.slice(startIndex, startIndex + this.postsPerPage);
+  }
 
+  nextPage() {
+    if (this.currentPage * this.postsPerPage < this.posts.length) {
+      this.currentPage++;
+      this.updatePaginatedPosts();
+    }
+  }
+
+  previousPage() {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+      this.updatePaginatedPosts();
+    }
+  }
 }
