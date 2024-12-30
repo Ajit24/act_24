@@ -1,0 +1,19 @@
+<div class="counter-timer">
+    <div class="input-container">
+      <input 
+        type="number" 
+        [(ngModel)]="inputMinutes" 
+        [disabled]="isRunning"
+        min="0"
+        placeholder="Enter minutes"
+      >
+    </div>
+    <div class="display">
+      {{ formatNumber(hours) }}:{{ formatNumber(mins) }}:{{ formatNumber(secs) }}
+    </div>
+    <div class="controls">
+      <button (click)="startTimer()" [disabled]="isRunning || inputMinutes <= 0">Start</button>
+      <button (click)="stopTimer()" [disabled]="!isRunning">Stop</button>
+      <button (click)="resetTimer()">Reset</button>
+    </div>
+  </div>

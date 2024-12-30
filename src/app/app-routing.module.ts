@@ -14,6 +14,7 @@ import { DownloadComponent } from './download/download.component';
 import { ScrollComponent } from './scroll/scroll.component';
 import { CounterComponent } from './counter/counter.component';
 import { PostComponent } from './post/post.component';
+import { CountertimerComponent } from './countertimer/countertimer.component';
 
 
 
@@ -32,7 +33,8 @@ const routes: Routes = [
 {path:'download', component: DownloadComponent},
 {path:'scroll', component:ScrollComponent},
 {path:'counter', component:CounterComponent},
-{path:'post', component:PostComponent}
+{path:'post', component:PostComponent},
+{path:'countertimer', component :CountertimerComponent},
 
 ];
 

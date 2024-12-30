@@ -29,6 +29,7 @@ import { DownloadComponent } from './download/download.component';
 import { ScrollComponent } from './scroll/scroll.component';
 import { CounterComponent } from './counter/counter.component';
 import { PostComponent } from './post/post.component';
+import { CountertimerComponent } from './countertimer/countertimer.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { PostComponent } from './post/post.component';
     ScrollComponent,
     CounterComponent,
     PostComponent,
+    CountertimerComponent,
     
     
   ],
