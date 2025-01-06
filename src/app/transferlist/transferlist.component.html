@@ -1,0 +1,56 @@
+<div class="transfer-list-container">
+    <div class="list-box">
+      <h3>Left Container</h3> <hr>
+      <div class="items-container">
+        <div
+          *ngFor="let item of leftItems"
+          [class.selected]="selectedLeftItems.includes(item.id)"
+          class="item"
+        >
+          <label>
+            <input
+              type="checkbox"
+              [checked]="selectedLeftItems.includes(item.id)"
+              (change)="toggleLeftItem(item.id)"
+            />
+            {{ item.name }}
+          </label>
+        </div>
+      </div>
+    </div>
+  
+    <div class="controls">
+      <button
+        [disabled]="selectedLeftItems.length === 0"
+        (click)="moveRight()"
+      >
+        →
+      </button>
+      <button
+        [disabled]="selectedRightItems.length === 0"
+        (click)="moveLeft()"
+      >
+        ←
+      </button>
+    </div>
+  
+    <div class="list-box">
+      <h3>Right Container</h3> <hr>
+      <div class="items-container">
+        <div
+          *ngFor="let item of rightItems"
+          [class.selected]="selectedRightItems.includes(item.id)"
+          class="item"
+        >
+          <label>
+            <input
+              type="checkbox"
+              [checked]="selectedRightItems.includes(item.id)"
+              (change)="toggleRightItem(item.id)"
+            />
+            {{ item.name }}
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>

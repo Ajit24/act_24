@@ -30,6 +30,7 @@ import { ScrollComponent } from './scroll/scroll.component';
 import { CounterComponent } from './counter/counter.component';
 import { PostComponent } from './post/post.component';
 import { CountertimerComponent } from './countertimer/countertimer.component';
+import { TransferlistComponent } from './transferlist/transferlist.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { CountertimerComponent } from './countertimer/countertimer.component';
     CounterComponent,
     PostComponent,
     CountertimerComponent,
+    TransferlistComponent,
     
     
   ],

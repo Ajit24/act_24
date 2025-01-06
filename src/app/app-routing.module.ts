@@ -15,7 +15,7 @@ import { ScrollComponent } from './scroll/scroll.component';
 import { CounterComponent } from './counter/counter.component';
 import { PostComponent } from './post/post.component';
 import { CountertimerComponent } from './countertimer/countertimer.component';
-
+import { TransferlistComponent } from './transferlist/transferlist.component';
 
 
 const routes: Routes = [
@@ -35,7 +35,7 @@ const routes: Routes = [
 {path:'counter', component:CounterComponent},
 {path:'post', component:PostComponent},
 {path:'countertimer', component :CountertimerComponent},
-
+{path:'transferlist', component:TransferlistComponent }
 ];
 
 @NgModule({

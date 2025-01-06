@@ -1,0 +1,45 @@
+.transfer-list-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .list-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 200px;
+    border-radius: 4px;
+  }
+  
+  .items-container {
+    min-height: 200px;
+  }
+  
+  .item {
+    padding: 8px;
+    margin: 4px 0;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .item.selected {
+    background-color: #e6f7ff;
+  }
+  
+  .controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
